@@ -5,11 +5,9 @@
 
   <div class="list-group list-reset">
 
-    <button class="list-group-item listgroup-item-action">
-      Call Of Duty
-    </button>
-
+    <button *ngFor="let tag of tags"
+    class="list-group-item listgroup-item-action">
+    {{tag | titlecase  }}
+  </button>
   </div>
-
-
 </div>
