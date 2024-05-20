@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GifsModule } from './gifs/gifs.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent} from './app.component';
 
@@ -14,6 +15,7 @@ import { AppComponent} from './app.component';
   imports: [
 
     BrowserModule,
+    HttpClientModule,
     GifsModule,
     SharedModule,
 
